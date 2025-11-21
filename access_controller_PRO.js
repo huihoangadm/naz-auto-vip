@@ -1,6 +1,6 @@
 (async function(){
   try{
-    const PAYLOAD_URL = "https://cdn.jsdelivr.net/gh/huihoangadm/naz-auto-vip/payload_PRO.js";
+    const PAYLOAD_URL = "https://raw.githubusercontent.com/huihoangadm/naz-auto-vip/main/payload_PRO.js";
     const resp = await fetch(PAYLOAD_URL, {cache: "no-store"});
     if(!resp.ok) throw new Error("Failed to load payload: "+resp.status);
     const text = await resp.text();
